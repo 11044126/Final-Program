@@ -1,0 +1,210 @@
+/*目錄的大致排版*/
+header {
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    background-color: #9F5000;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/*首頁向左對齊*/
+.logo {
+    margin: 20px 0px 20px 30px;
+    border-radius: 50%;
+}
+
+/*關於我們向左對齊 大致排版*/
+.aboutus {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 30px 0px 30px 30px;
+    padding: 20px 30px;
+}
+
+/*所有商品向左對齊 大致排版*/
+.good {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 30px 0px 30px 30px;
+    padding: 0px 30px;
+}
+
+/*鼠標放上去有變化*/
+.aboutus:hover {
+    background-color: red;
+}
+
+.good:hover {
+    background-color: red;
+}
+
+.vip:hover {
+    background-color: red;
+}
+
+/*會員專區向左對齊 大致排版*/
+.vip {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 30px 0px 30px 30px;
+    padding: 0px 30px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 50px;
+}
+
+/*購物車向左對齊 大致排版*/
+.cart {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 30px 0px 30px 200px;
+    padding: 0px 30px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 30px 0px 30px 30px;
+    padding: 0px 30px;
+}
+
+/*商品介紹大致排版*/
+.menu {
+    border: solid;
+    margin: 10px 20% 10px 20%;
+    background-color: #FFBB77;
+}
+
+/*商品照片排版*/
+.titleimg {
+    margin: 50px 0 0 10%;
+    border-radius: 20%;
+    float: left;
+}
+
+/*商品介紹排版*/
+.lable {
+    float: right;
+    font-size: 20px;
+    margin: 100px 20% 0 0;
+}
+
+.addcart {
+    margin-top: 10%;
+    margin-left: 30%;
+    padding: 2%;
+    border-radius: 20%;
+}
+
+.addcart:hover {
+    color: white;
+    background-color: blue;
+}
+
+/*分隔線*/
+hr {
+    clear: both;
+    margin: 50px;
+}
+
+/*表單排版*/
+form {
+    margin: 5%;
+    margin-left: 30%;
+}
+
+/*評分星級排版*/
+.starplace {
+    margin-bottom: 2%;
+}
+
+/*留言向右對齊*/
+.msg {
+    margin-top: 2%;
+}
+
+/*送出按鈕位置*/
+.send input[type] {
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 1%;
+    margin-left: 20%;
+}
+
+/*送出按鈕變化*/
+.send input[type]:hover {
+    background-color: green;
+    color: white;
+}
+
+/*文字排版*/
+.rec-text {
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*推薦商品排版*/
+.recommend {
+    margin: 10px 20% 30px 20%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/*推薦商品內部排版*/
+.rec-good {
+    margin-left: 15px;
+    display: inline-block;
+    padding: 20px;
+    border: solid;
+    background-color: #FFBB77;
+}
+
+/*版權區大致排版*/
+.copyright {
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: brown;
+}
+
+/*圖片美邊*/
+img {
+    border-radius: 20%;
+}
+
+.ratings {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ddd;
+    /*背景星星顏色*/
+    overflow: hidden;
+    font-size: 20px;
+    /*調整字體大小可放大縮小星星*/
+    text-shadow: 0px 1px 0 #999;
+}
+
+.full_star {
+    width: 90%;
+    /*調整寬度可變更星等*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #D56A16;
+    /*前景星星顏色*/
+}

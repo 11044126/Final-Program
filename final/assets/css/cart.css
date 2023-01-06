@@ -1,0 +1,171 @@
+/*目錄的大致排版*/
+header {
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    background-color: #9F5000;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/*首頁向左對齊*/
+.logo {
+    margin: 20px 0px 20px 30px;
+    border-radius: 50%;
+}
+
+/*關於我們向左對齊 大致排版*/
+.aboutus {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 30px 0px 30px 30px;
+    padding: 20px 30px;
+}
+
+/*所有商品向左對齊 大致排版*/
+.good {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 30px 0px 30px 30px;
+    padding: 0px 30px;
+}
+
+/*鼠標放上去有變化*/
+.aboutus:hover {
+    background-color: red;
+}
+
+.good:hover {
+    background-color: red;
+}
+
+.vip:hover {
+    background-color: red;
+}
+
+/*會員專區向左對齊 大致排版*/
+.vip {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 30px 0px 30px 30px;
+    padding: 0px 30px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 100px;
+}
+
+/*購物車向左對齊 大致排版*/
+.cart {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 30px 0px 30px 200px;
+    padding: 0px 30px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 30px 0px 30px 30px;
+    padding: 0px 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+form {
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+.total-order {
+    border: solid;
+    margin: 3% 10%;
+    background-color: blanchedalmond;
+}
+
+.shop-text {
+    margin: 1% 5%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.s-b-t {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-boby-root {
+    display: flex;
+    background-color: #c29f74;
+    margin-bottom: 10px;
+    border: solid;
+    width: 50%;
+    padding: 2%;
+    margin: 2% 25%;
+    box-sizing: inherit;
+}
+
+.shop-boby-root-right {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.shop-p-name {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.shop-p-num {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.shop-p-total {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.shop-p-bot {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.check {
+    border: white;
+    border-radius: 15%;
+    background-color: lightblue;
+    font-size: 20px;
+    margin-left: 90%;
+    margin-bottom: 3%;
+    padding: 0.5% 1%;
+}
+
+.check:hover {
+    background-color: #9F5000;
+    color: white;
+}
+
+/*版權區大致排版*/
+.copyright {
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: brown;
+}

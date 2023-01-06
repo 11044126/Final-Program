@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>巧奪你的心</title>
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body style="background-color: blanchedalmond;">
+  <!--上面那一排目錄-->
+  <header>
+    <!--logo是首頁-->
+    <a href="index.html"><img src="assets/images/logo.jpg" width="100px" height="100px" class="logo"></a>
+    <div class="aboutus"><a href="aboutus.html" style="text-decoration:none; color:white;">關於我們</a></div>
+    <div class="good"><a href="good.html" style="text-decoration:none; color:white;">所有商品</a></div>
+    <div class="vip"><a href="vip.html" style="text-decoration:none; color:white;">會員登入</a></div>
+    <!--搜尋商品-->
+    <div class="search-container">
+      <form action="">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><img src="assets/images/icon/magnifying-glass.png"></button>
+      </form>
+    </div>
+    <div class="cart"><a href="cart.html" style="text-decoration:none; color:white;"><img src="assets/images/icon/shopping-cart.png" width="30px" height="30px"></a></div>
+    <div class="user"><a href="userdata.html"><img src="assets/images/icon/user.png" width="30px" height="30px"></a></div>
+  </header>
+  <section class="ad">
+    <div>
+      <!--第一張廣告-->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="assets/images/ad/1.jpg" style="width:100%">
+        </div>
+        <!--第二張廣告-->        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="assets/images/ad/3.jpg" style="width:100%">
+        </div>
+        <!--第三張廣告-->        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="assets/images/ad/4.jpg" style="width:100%">
+        </div>
+        <!--左右箭頭換圖片-->        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+                
+      </div>
+      <br>
+      <!--底下按鈕換圖片-->          
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+    </div>
+  </section>
+  <section class="recommend">
+    <!--商品排名(暫定)-->
+    <div class="numname">本店排行榜</div>
+    <div style="display:flex">
+      <!--第一名商品-->
+      <div class="center">
+       <h2>  No.1  </h2>
+       <img src="assets/images/products/1.jpg" height="200px" style="border-radius:10%; margin-bottom:10px;" >
+       <br>
+          <p style="font-size: 30px;">健達奇趣蛋</p>
+      </div>
+      <!--第二名商品-->
+      <div class="center">
+       <h2>  No.2  </h2>
+       <img src="assets/images/products/4.jpg" height="200px" style="border-radius:10%; margin-bottom:10px" >
+       <br>
+       <p style="font-size: 30px;">Meiji 黑巧克力</p>
+      </div>
+      <!--第三名商品-->
+      <div class="center">
+       <h2>  No.3  </h2>
+       <img src="assets/images/products/7.jpg" height="200px" style="border-radius:10%; margin-bottom:10px">
+       <br>
+       <p style="font-size: 30px;">雷神 黑巧克力</p>
+      </div>
+      <div style='clear:both;'></div>
+     </div>
+  </section>
+  <footer>
+    <!--最底下的版權-->
+    <div class="copyright">
+      <h3>Copyright © 巧奪你的心 Chodo Your Heart . All rights reserved.</h3>
+    </div>    
+  </footer>
+  <!--滾動圖的js-->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>

@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/product.css">
+    <link rel="stylesheet" href="../assets/css/product.css">
 </head>
 <body style="background-color: blanchedalmond;">
     <!--上面那一排目錄-->
     <header>
         <!--logo是首頁-->
-        <a href="index.html"><img src="assets/images/logo.jpg" width="100px" height="100px" class="logo"></a>
+        <a href="index.html"><img src="../assets/images/logo.jpg" width="100px" height="100px" class="logo"></a>
         <div class="aboutus"><a href="aboutus.html" style="text-decoration:none; color:white;">關於我們</a></div>
         <div class="good"><a href="good.html" style="text-decoration:none; color:white;">所有商品</a></div>
         <div class="vip"><a href="vip.html" style="text-decoration:none; color:white;">會員登入</a></div>
@@ -19,17 +19,17 @@
         <div class="search-container">
           <form action="">
             <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><img src="assets/images/icon/magnifying-glass.png"></button>
+            <button type="submit"><img src="../assets/images/icon/magnifying-glass.png"></button>
           </form>
         </div>
-        <div class="cart"><a href="cart.html" style="text-decoration:none; color:white;"><img src="assets/images/icon/shopping-cart.png" width="30px" height="30px"></a></div>
-        <div class="user"><a href="userdata.html"><img src="assets/images/icon/user.png" width="30px" height="30px"></a></div>
+        <div class="cart"><a href="cart.html" style="text-decoration:none; color:white;"><img src="../assets/images/icon/shopping-cart.png" width="30px" height="30px"></a></div>
+        <div class="user"><a href="userdata.html"><img src="../assets/images/icon/user.png" width="30px" height="30px"></a></div>
       </header>
     <section>
         <!--整個區塊商品介紹-->
         <div class="menu">
             <!--商品照片 資料-->
-            <img class="titleimg" src="assets/images/products/1.jpg" width="200px" height="200px">
+            <img class="titleimg" src="../assets/images/products/1.jpg" width="200px" height="200px">
             <div class="lable">健達奇趣蛋<br>鬆脆的可可球配上牛奶及可可醬<br>價格：$99<button class="addcart">加入購物車</button></div>
             
             <hr>
@@ -38,11 +38,11 @@
                 <div class="starplace">
                     <div>評分：</div>
                     <div id="stars" class="left">
-                        <img src="assets/images/star1.png" alt="">
-                        <img src="assets/images/star1.png" alt="">
-                        <img src="assets/images/star1.png" alt="">
-                        <img src="assets/images/star1.png" alt="">
-                        <img src="assets/images/star1.png" alt="">
+                        <img src="../assets/images/star1.png" alt="">
+                        <img src="../assets/images/star1.png" alt="">
+                        <img src="../assets/images/star1.png" alt="">
+                        <img src="../assets/images/star1.png" alt="">
+                        <img src="../assets/images/star1.png" alt="">
                     </div>
                     <div id="comment" class="left">
                     </div>
@@ -68,16 +68,16 @@
         <div class="rec-text">推薦商品</div>
         <div class="recommend">
             <div class="rec-good">
-                <a href="product.html"><img src="assets/images/products/3.jpg" width="150px" height="150px"></a>
+                <a href="product.html"><img src="../assets/images/products/3.jpg" width="150px" height="150px"></a>
             </div>
             <div class="rec-good">
-                <a href="product.html"><img src="assets/images/products/5.jpg" width="150px" height="150px"></a>
+                <a href="product.html"><img src="../assets/images/products/5.jpg" width="150px" height="150px"></a>
             </div>
             <div class="rec-good">
-                <a href="product.html"><img src="assets/images/products/9.jpg" width="150px" height="150px"></a>
+                <a href="product.html"><img src="../assets/images/products/9.jpg" width="150px" height="150px"></a>
             </div>
             <div class="rec-good">
-                <a href="product.html"><img src="assets/images/products/10.jpg" width="150px" height="150px"></a>
+                <a href="product.html"><img src="../assets/images/products/10.jpg" width="150px" height="150px"></a>
             </div>
         </div>
     </section>
@@ -99,17 +99,17 @@
         divStars.onmouseover = function (e) {
             if (e.target.tagName === "IMG") { //事件源是圖片
                 //把滑鼠移動到的星星替換圖片
-                e.target.src = "assets/images/star.png";
+                e.target.src = "../assets/images/star.png";
                 //把滑鼠移動到的星星之前的星星替換圖片
                 var prev = e.target.previousElementSibling;
                 while (prev) {
-                    prev.src = "assets/images/star.png";
+                    prev.src = "../assets/images/star.png";
                     prev = prev.previousElementSibling;
                 }
                 //把滑鼠移動到的星星之後的星星替換圖片
                 var next = e.target.nextElementSibling;
                 while (next) { //把滑鼠移動到的星星之後的星星替換圖片
-                    next.src = "assets/images/star1.png";
+                    next.src = "../assets/images/star1.png";
                     next = next.nextElementSibling;
                 }
 
@@ -130,15 +130,15 @@
             if (starNum !== -1) { //滑鼠點擊事件發生，將評分固定在點擊的星星上
                 for (var i = 0; i < divStars.children.length; i++) {
                     if (i <= starNum) {
-                        divStars.children[i].src = "assets/images/star.png";
+                        divStars.children[i].src = "../assets/images/star.png";
                         
                     } else {
-                        divStars.children[i].src = "assets/images/star1.png";
+                        divStars.children[i].src = "../assets/images/star1.png";
                     }
                 }
             } else {
                 for (var i = 0; i < divStars.children.length; i++) {
-                    divStars.children[i].src = "assets/images/star1.png";
+                    divStars.children[i].src = "../assets/images/star1.png";
                 }
             }
         }
